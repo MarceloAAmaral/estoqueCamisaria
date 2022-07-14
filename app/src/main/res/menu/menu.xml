@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_camisas"
+        android:title="@string/camisas"/>
+    <item
+        android:id="@+id/menu_camisetas"
+        android:title="@string/camisetas"/>
+</menu>
