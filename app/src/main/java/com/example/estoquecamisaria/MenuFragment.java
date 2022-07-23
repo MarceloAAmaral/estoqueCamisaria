@@ -1,7 +1,6 @@
 package com.example.estoquecamisaria;
 
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -9,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 
 public class MenuFragment extends Fragment {
@@ -36,10 +37,12 @@ public class MenuFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.menu_camisas:
-                Toast.makeText(getActivity(), "Menu Camisa", Toast.LENGTH_LONG).show();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_main, new com.example.estoquecamisaria.camisa.MainFragment()).commit();
+/*                Toast.makeText(getActivity(), "Menu Camisa"+item, Toast.LENGTH_LONG).show();*/
                 break;
             case R.id.menu_camisetas:
-                Toast.makeText(getActivity(), "Menu Camisetas", Toast.LENGTH_LONG).show();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_main, new com.example.estoquecamisaria.camiseta.MainFragment()).commit();
+                /*Toast.makeText(getActivity(), "Menu Camisetas"+item, Toast.LENGTH_LONG).show();*/
                 break;
         }
         return super.onOptionsItemSelected(item);

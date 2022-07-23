@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".camisa.AdicionarFragment">
+    tools:context=".camiseta.AdicionarFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,6 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/tipo" />
-
             <EditText
                 android:id="@+id/editText_tipo"
                 android:layout_width="match_parent"
@@ -73,16 +72,14 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/qtde" />
-
             <EditText
                 android:id="@+id/editText_qtde"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
-
             <Button
-                android:id="@+id/button_adicionar_camisa"
+                android:id="@+id/button_adicionar_camiseta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

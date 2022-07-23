@@ -5,59 +5,61 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textViewIdListarCamisas"
+        android:id="@+id/textViewIdListarCamisetas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"
         />
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tipo" />
-    <TextView
-        android:id="@+id/textViewTipoListarCamisas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-    //Tamanho
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tamanho" />
-    <TextView
-        android:id="@+id/textViewTamanhoListarCamisas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-    //cor
+// tipo
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/cor" />
+        android:text="@string/tipo" />
     <TextView
-        android:id="@+id/textViewCorListarCamisas"
+        android:id="@+id/textViewTipoListarCamisetas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
-    //qtde
+
+//tamanho
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="@string/tamanho" />
+    <TextView
+        android:id="@+id/textViewTamanhoListarCamisetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+   // cor
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cor" />
+    <TextView
+        android:id="@+id/textViewCorListarCamisetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    //qtde
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:text="@string/qtde" />
     <TextView
-        android:id="@+id/textViewQtdeListarCamisas"
+        android:id="@+id/textViewQtdeListarCamisetas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />

@@ -5,17 +5,20 @@
     <string name="listar_camisa">Listar Camisas</string>
     <string name="listar">Listar</string>
     <string name="adicionar">Adicionar</string>
-    <string name="gerenciar_camisas">Gerenciar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gerenciar_camisas">Gerenciar camisas</string>
     <string name="editar">Editar</string>
-    <string name="tipo">Tipo</string>
-    <string name="tamanho">Tamanho</string>
-    <string name="cor">Cor</string>
+    <string name="tipo"><b>TIPO</b></string>
+    <string name="tamanho"><b>TAMANHO</b></string>
+    <string name="cor"><b>COR</b></string>
     <string name="salvar">Salvar</string>
-    <string name="nome">Nome</string>
+    <string name="nome"><b>NOME</b></string>
     <string name="excluir">Excluir</string>
     <string name="certeza_msm">Certeza?</string>
     <string name="sim">Sim</string>
     <string name="nao">Não</string>
+    <string name="listar_camisetas">Listar camisetas</string>
+    <string name="gerenciar_camisetas">Gerenciar camisetas</string>
+    <string name="listarCamisetas">Listar camisetas</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="qtde"><b>QTDE</b></string>
 </resources>

@@ -1,7 +1,7 @@
-package com.example.estoquecamisaria.camisa;
+package com.example.estoquecamisaria.camiseta;
 
 
-public class Camisa {
+public class Camiseta {
     /* encapsulamento */
     private int id;
     private String tipo;

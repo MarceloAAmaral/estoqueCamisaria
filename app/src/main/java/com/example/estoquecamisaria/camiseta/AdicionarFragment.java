@@ -1,4 +1,4 @@
-package com.example.estoquecamisaria.camisa;
+package com.example.estoquecamisaria.camiseta;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,12 +30,12 @@ public class AdicionarFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.camisa_fragment_adicionar, container, false);
+        View v = inflater.inflate(R.layout.camiseta_fragment_adicionar, container, false);
         etTipo = v.findViewById(R.id.editText_tipo);
         etTamanho = v.findViewById(R.id.editText_tamanho);
         etCor = v.findViewById(R.id.editText_cor);
         etQtde = v.findViewById(R.id.editText_qtde);
-        Button btnAdicionar = v.findViewById(R.id.button_adicionar_camisa);
+        Button btnAdicionar = v.findViewById(R.id.button_adicionar_camiseta);
         btnAdicionar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -52,15 +52,18 @@ public class AdicionarFragment extends Fragment {
             Toast.makeText(getActivity(), "Por favor, informar o tamanho", Toast.LENGTH_LONG).show();
         }else if(etCor.getText().toString().equals("")){
             Toast.makeText(getActivity(), "Por favor, informar a cor", Toast.LENGTH_LONG).show();
+        }else if(etQtde.getText().toString().equals("")){
+            Toast.makeText(getActivity(), "Por favor, informar a qtde", Toast.LENGTH_LONG).show();
         }else{
             DatabaseHelper databaseHelper = new DatabaseHelper(getActivity());
-            Camisa c = new Camisa();
-            c.setTipo(etTipo.getText().toString());
-            c.setTamanho(etTamanho.getText().toString());
-            c.setCor(etCor.getText().toString());
-            databaseHelper.createCamisas(c);
-            Toast.makeText(getActivity(), "Camisa salva", Toast.LENGTH_LONG).show();
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_camisa,new ListarFragment()).commit();
+            Camiseta e = new Camiseta();
+            e.setTipo(etTipo.getText().toString());
+            e.setTamanho(etTamanho.getText().toString());
+            e.setCor(etCor.getText().toString());
+            e.setQtde(etQtde.getText().toString());
+            databaseHelper.createCamisetas(e);
+            Toast.makeText(getActivity(), "Camiseta salva", Toast.LENGTH_LONG).show();
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_camiseta,new ListarFragment()).commit();
         }
     }
 
